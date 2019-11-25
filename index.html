@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Elinguage</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/fullpage.css">
+
+	<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="scripts/fullpage.js"></script>
+	<script type="text/javascript" src="scripts/scrolloverflow.min.js"></script>
+
+	<script>
+		jQuery(document).ready(function($){
+			$("#fullpage").fullpage({
+				navigation:true,
+        		navigationPosition: 'right',
+			});
+		})
+	</script>
 </head>
 <body>
+	<div id="fullpage">
+	<div class="section" id="section0">
 	<div class="container">
 		<div class="container__about">
 			<div class="container__logo"></div>
@@ -34,6 +51,8 @@
 			</form>
 		</div>
 	</div>
+	</div>
+	<div class="section" id="section1">
 	<div class="container__two">
 		<h3 class="container__two-title">What is Elinguage?</h3>
 		<p class="container__two-info">Web platform for communication using different artificial languages. New idea for your and your friends fun. Enjoy yor conversation!</p>
@@ -61,6 +80,8 @@
 			</div>
 		</div>
 	</div>
+	</div>
+	<div class="section" id="section2">
 	<div class="container__three">
 		<img src="img/logo_copy.png">
 		<div class="contact">
@@ -70,7 +91,17 @@
 				<div></div>
 			</div>
 			<a href="#">support@elinguage.com</a>
+			<label class="switch1 switch">
+  				<input type="checkbox">
+  				<span class="slider round"></span>
+			</label>
+			<label class="switch2 switch">
+  				<input type="checkbox">
+  				<span class="slider round"></span>
+			</label>
 		</div>
+	</div>
+	</div>
 	</div>
 </body>
 </body>
