@@ -1,417 +1,410 @@
-*{
-	margin: 0;
-	padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-.container{
-	background-image: url("../img/neonbrand-570373-unsplash.jpg.png");
-	background-size: cover;
-    background-repeat: no-repeat;
-	width: 100%;
-	height: 100vh;
-	opacity: 0.7;
-	display: flex;
-}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around; }
+  .container .container__wrapper {
+    margin-top: 172px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container .container__wrapper .container__logo {
+      width: 276px;
+      height: 109px;
+      margin-right: 0;
+      background-image: url("../img/logo.png");
+      background-size: cover; }
+    .container .container__wrapper p {
+      margin-top: 55px;
+      width: 331px;
+      height: 99px;
+      color: #333333;
+      font-family: "Catamaran", sans-serif;
+      font-size: 33px;
+      font-weight: 500;
+      line-height: 54px;
+      letter-spacing: 3.6px;
+      text-align: center; }
+  .container .container__registration {
+    margin-top: 129px;
+    width: 377px;
+    height: 422px;
+    background-color: #333333;
+    box-shadow: 0 6px 6px 1px rgba(44, 43, 45, 0.7); }
+    .container .container__registration .tab-form {
+      background-color: #333333;
+      padding: 20px; }
+      .container .container__registration .tab-form p {
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-family: "Catamaran", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 1.6px; }
+    .container .container__registration a {
+      width: 102%;
+      height: 40px;
+      font-weight: bold;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      background-color: #ff6600;
+      color: #333333;
+      font-family: "Catamaran - Black", sans-serif;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 3px; }
+    .container .container__registration input {
+      display: block;
+      width: 100%;
+      height: 40px;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      font-family: "Catamaran", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 36px; }
+    .container .container__registration label.tab {
+      background-color: grey;
+      display: block;
+      padding: 15px;
+      width: 92%;
+      height: 30px;
+      color: black;
+      text-align: center;
+      font-family: "Catamaran", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 1.8px; }
+    .container .container__registration label.tab.active {
+      background-color: #333333;
+      color: #ffffff; }
+    .container .container__registration .del {
+      display: none; }
+    .container .container__registration .hello {
+      display: flex; }
 
-.container__about{
-	display: flex;
-	flex-direction: column;
-	margin-top: 167px;
-}
+.information {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .information .information__title-one {
+    margin-top: 72px;
+    width: 331px;
+    height: 34px; }
+  .information .information__title-two {
+    margin-top: 55px;
+    width: 243px;
+    height: 34px; }
+  .information h1 {
+    color: #00a8b2;
+    font-family: "Catamaran - Black", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    letter-spacing: 3px; }
+  .information p {
+    margin-top: 17px;
+    width: 744px;
+    height: 44px;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1.6px; }
+  .information .information__container {
+    margin-top: 54px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+    .information .information__container .information__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .information .information__container .information__item h3 {
+        color: #00a8b2;
+        font-weight: bold;
+        font-family: "Catamaran - Black", sans-serif;
+        font-size: 18px;
+        letter-spacing: 1.8px; }
+      .information .information__container .information__item .text__wrapper {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        line-height: 24px;
+        font-family: "Catamaran", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; }
+      .information .information__container .information__item .one {
+        margin-top: 17px;
+        width: 160px;
+        height: 53px; }
+      .information .information__container .information__item .two {
+        margin-top: 10px;
+        width: 201px;
+        height: 94px; }
+      .information .information__container .information__item .three {
+        margin-top: 16px;
+        width: 250px;
+        height: 116px; }
+      .information .information__container .information__item .four {
+        margin-top: 14px;
+        width: 233px;
+        height: 47px; }
 
-.container__logo{
-	background-image: url("../img/logo.png");
-	-webkit-background-size: cover;
-	background-size: cover;
-    background-repeat: no-repeat;
-    width: 276px;
-	height: 109px;
-	margin-left: 270px;
-}
+.footer__information {
+  width: 100%;
+  height: 100vh;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .footer__information .footer__logo {
+    width: 160px;
+    height: 64px;
+    background-image: url("../img/logo_copy.png"); }
+  .footer__information .contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16px;
+    line-height: 36px; }
+    .footer__information .contact__wrapper .line__wrapper {
+      width: 225px;
+      display: flex;
+      justify-content: space-around; }
+      .footer__information .contact__wrapper .line__wrapper .line {
+        margin-top: 15px;
+        width: 45px;
+        height: 5px;
+        background-color: #ffffff; }
+    .footer__information .contact__wrapper a {
+      color: #ffffff;
+      font-family: "Catamaran", sans-serif;
+      font-size: 16px;
+      line-height: 36px;
+      letter-spacing: 1.6px;
+      text-decoration: none; }
 
-.container__info{
-	width: 380px;
-	height: 88px;
-	text-align: center;
-	color: #333333;
-	font-family: 'Catamaran', sans-serif;;
-	font-size: 36px;
-	font-weight: 500;
-	line-height: 54px;
-	letter-spacing: 3.6px;
-	margin-top: 55px;
-	margin-left: 219px;
-}
+@media (width: 360px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 900px; }
+    .container .container__wrapper {
+      margin-top: 100px;
+      height: 331px;
+      width: 263px; }
+    .container .container__registration {
+      margin-top: 22px;
+      width: 360px;
+      height: 454px;
+      box-shadow: none; }
 
-.container__registration{
+  .information {
+    height: 1400px; }
+    .information p {
+      width: 332px;
+      height: 102px;
+      text-align: center; }
+    .information .information__container {
+      margin-top: 0;
+      flex-direction: column; }
+      .information .information__container .information__item {
+        margin-top: 100px; }
 
-	opacity: 0.7;
-	width: 377px;
-	height: 422px;
-	padding: 10px;
-	opacity: 0.9;
-	margin-top: 124px;
-	margin-left: 199px;
-}
+  .footer__information {
+    flex-direction: column; } }
+@media (width: 411px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 900px; }
+    .container .container__wrapper {
+      margin-top: 100px;
+      height: 331px;
+      width: 263px; }
+    .container .container__registration {
+      margin-top: 22px;
+      width: 411px;
+      height: 454px;
+      box-shadow: none; }
 
-.tab-form{
-	background-color: #333333;
-	padding: 20px;
-}
+  .information {
+    height: 1400px; }
+    .information p {
+      width: 332px;
+      height: 102px;
+      text-align: center; }
+    .information .information__container {
+      margin-top: 0;
+      flex-direction: column; }
+      .information .information__container .information__item {
+        margin-top: 100px; }
 
-.tab-form p {
-	margin-bottom: 20px;
-	width: 317px;
-	height: 40px;
-	color: #ffffff;
-	font-family: Catamaran, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 24px;
-	/* Text style for "If you’re" */
-	letter-spacing: 1.6px;
-}
+  .footer__information {
+    flex-direction: column; } }
+@media (width: 320px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 900px; }
+    .container .container__wrapper {
+      margin-top: 100px;
+      height: 320px;
+      width: 263px; }
+      .container .container__wrapper p {
+        width: 263px;
+        height: 155px; }
+    .container .container__registration {
+      margin-top: 22px;
+      width: 320px;
+      height: 454px;
+      box-shadow: none; }
 
+  .information {
+    height: 1400px; }
+    .information h1 {
+      font-size: 20px;
+      text-align: center; }
+    .information .information__title-one {
+      width: 320px; }
+    .information p {
+      width: 320px;
+      height: 102px;
+      text-align: center; }
+    .information .information__container {
+      margin-top: 0;
+      flex-direction: column; }
+      .information .information__container .information__item {
+        margin-top: 100px; }
 
+  .footer__information {
+    flex-direction: column; } }
+@media (width: 375px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 900px; }
+    .container .container__wrapper {
+      margin-top: 100px;
+      height: 331px;
+      width: 263px; }
+      .container .container__wrapper p {
+        width: 263px;
+        height: 155px; }
+    .container .container__registration {
+      margin-top: 22px;
+      width: 375px;
+      height: 454px;
+      box-shadow: none; }
 
-button{
-	text-decoration: none;
-	width: 347px;
-	height: 40px;	
-	color: #333333;
-	font-family: "Catamaran - Black", sans-serif;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 36px;
-	letter-spacing: 3px;
-	background-color: #ff6600;
-	border: none;
-}
+  .information {
+    height: 1400px; }
+    .information h1 {
+      font-size: 20px;
+      text-align: center; }
+    .information .information__title-one {
+      width: 320px; }
+    .information p {
+      width: 328px;
+      height: 102px;
+      text-align: center; }
+    .information .information__container {
+      margin-top: 0;
+      flex-direction: column; }
+      .information .information__container .information__item {
+        margin-top: 100px; }
 
-.container__registration input {
-	display: block;
-	width: 100%;
-	height: 40px;
-	background-color: #ffffff;
-	margin-bottom: 20px;
-}
+  .footer__information {
+    flex-direction: column; } }
+@media (width: 414px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 900px; }
+    .container .container__wrapper {
+      margin-top: 100px;
+      height: 331px;
+      width: 263px; }
+      .container .container__wrapper p {
+        width: 263px;
+        height: 155px; }
+    .container .container__registration {
+      margin-top: 22px;
+      width: 414px;
+      height: 454px;
+      box-shadow: none; }
 
-label.tab{
-	background: grey;
-	display: block;
-	padding: 15px;
-	width: 92%;
-	height: 30px;
-	color: #ffffff;
-	font-family: Catamaran, sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 36px;
-	letter-spacing: 1.8px;
-}
+  .information {
+    height: 1400px; }
+    .information h1 {
+      font-size: 20px;
+      text-align: center; }
+    .information .information__title-one {
+      width: 320px; }
+    .information p {
+      width: 328px;
+      height: 102px;
+      text-align: center; }
+    .information .information__container {
+      margin-top: 0;
+      flex-direction: column; }
+      .information .information__container .information__item {
+        margin-top: 100px; }
 
-label.tab.active{
-	background-color: #333333;				
-}
+  .footer__information {
+    flex-direction: column; } }
+@media (width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 900px; }
+    .container .container__wrapper {
+      margin-top: 100px;
+      height: 331px;
+      width: 277px; }
+      .container .container__wrapper p {
+        width: 263px;
+        height: 155px; }
+    .container .container__registration {
+      margin-top: 22px;
+      width: 490px;
+      height: 454px;
+      box-shadow: none; }
 
-.del{
-	display: none
-}
+  .information {
+    height: 1400px; }
+    .information h1 {
+      font-size: 20px;
+      text-align: center; }
+    .information .information__title-one {
+      width: 320px; }
+    .information p {
+      width: 328px;
+      height: 102px;
+      text-align: center; }
+    .information .information__container {
+      margin-top: 0;
+      flex-direction: column; }
+      .information .information__container .information__item {
+        margin-top: 100px; }
 
-.hello {
-	display: flex;
-	flex-direction: row;
-}
+  .footer__information {
+    flex-direction: column; } }
 
-.container__two{
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-
-.container__two-title{
-	/* Style for "What is El" */
-	margin-top: 72px;
-	width: 331px;
-	height: 35px;
-	color: #00a8b2;
-	font-family: "Catamaran - Black", sans-serif;
-	font-size: 30px;
-	line-height: 36px;
-	letter-spacing: 3px;
-	font-weight: bold;
-}
-
-.container__two-info{
-	margin-top: 17px;
-	width: 764px;
-	height: 40px;
-	color: #333333;
-	font-family: Catamaran, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 24px;
-	/* Text style for "Web platfo" */
-	letter-spacing: 1.6px;
-}
-
-.container__two-how{
-	margin-top: 55px;
-	color: #00a8b2;
-	font-family: "Catamaran - Black", sans-serif;
-	font-size: 30px;
-	line-height: 36px;
-	letter-spacing: 3px;
-	font-weight: bold;
-}
-
-.container__masha{
-	margin-top: 54px;
-	height: 300px;
-	width: 300px;
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
-}
-
-.container__masha h3{
-	margin-top: 17px;
-	color: #00a8b2;
-	font-family: "Catamaran - Black", sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	letter-spacing: 1.8px;
-}
-
-.container__masha p{
-	height: 300px;
-	width: 250px;
-	margin-left: 25px;
-	margin-right: 25px;
-	font-family: "Catamaran Light";
-	letter-spacing: 1.6px;
-}
-
-.masha__one p {
-	margin-top: 10px;
-}
-
-
-.container__three{
-	width: 100%;
-	height: 100vh;
-	background-color: #333333;
-	display: flex;
-	align-items: center;
-}
-
-.container__three img{
-	width: 160px;
-	height: 64px;
-	margin-left: 54px;
-}
-
-.title{
-	width: 240px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-
-.title div{
-	width: 45px;
-	height: 5px;
-	background-color: #ffffff;
-}
-
-.title p{
-	color: #ffffff;
-	font-family: Catamaran, sans-serif;
-	font-size: 16px;
-	line-height: 36px
-}
-
-.contact a{
-	color: #ffffff;
-	margin-left: 30px;
-	font-family: Catamaran, sans-serif;
-	font-size: 16px;
-	line-height: 36px
-	letter-spacing: 1.6px;
-	text-decoration: none;
-}
-
-.contact{
-	margin-top: 100px;
-	margin-left: 800px;
-	display: flex;
-	flex-direction: column;
-}
-
-.switch {
-  margin-top: 30px;
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch2{
-	margin-top: 30px;
-  	position: relative;
-  	display: inline-block;
-  	width: 60px;
-  	height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.switch2 input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-input:checked + .container__three{
-	background: red;
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-@media (max-width: 375px){
-	.container{
-		flex-direction: column;
-	}
-
-	.container__about{
-		margin-top: 45px;
-	}
-
-	.container__logo{
-		margin-left: 100px;
-		width: 176px;
-		height: 59px;
-	}
-
-	.container__info{
-		margin-top: 32px;
-		margin-left: 10px;
-		font-size: 20px;
-	}
-
-	.container__registration{
-		margin-left: -10px;
-	}
-
-	.container__two-title{
-		margin-top: 0px;
-		font-size: 20px;
-		text-align: center;
-	}
-
-	.container__masha{
-		flex-direction: column;
-	}
-
-	.container__masha p{
-		height: 75px;
-		
-	}
-
-	.masha__one{
-		margin-top: 270px;
-	}
-
-	.masha__one p{
-		height: 50px;
-	}
-
-	.container__masha img{
-		height: 44px;
-		width: 44px;
-	}
-
-	.container__two-info{
-		width: 300px;
-		text-align: center;
-	}
-
-	.container__two-how{
-		margin-top: 80px;
-		font-size: 20px;
-		text-align: center;
-
-	}
-
-	.container__three{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.container__three img{
-		margin-left: 0px;
-		margin-top: 100px;
-	}
-
-	.contact{
-		margin-left: 0px;
-		margin-top: 30px;
-	}
-
-	.switch{
-		margin-left: 90px;
-	}
-}
+/*# sourceMappingURL=style.css.map */
